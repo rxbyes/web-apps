@@ -302,7 +302,7 @@ define([
                 me = this;
             this.mode = mode;
             this.toolbar.applyLayout(mode);
-//            var url = 'https://www.onlyoffice.com/blog/2025/10/docs-9-1-released';
+//            var url = 'https://github.com/rxbyes/DocumentServer';
 
             Common.UI.FeaturesManager.isFeatureEnabled('featuresTips', true) && Common.UI.TooltipManager.addTips({
 //                'chartElements' : {name: 'help-tip-chart-elements', placement: 'bottom', text: this.helpChartElements, header: this.helpChartElementsHeader, target: '#id-document-holder-btn-chart-element', maxwidth: 300,
