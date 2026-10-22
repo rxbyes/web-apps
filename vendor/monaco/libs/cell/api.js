@@ -1271,7 +1271,7 @@ ApiInterface.prototype.Format = function(expression, format) { return ""; };
 * The passed function can be asynchronous (async function or function returning a Promise).
 * Inside the passed function, you can access the current cell address where the calculation is performed using *this.address*.
 * You can also access the addresses of function arguments using *this.args[0].address*, *this.args[1].address*, etc.
-* This method is not used in ONLYOFFICE Document Builder. Use AddCustomFunctionLibrary instead.
+* This method is not used in OA Docs Document Builder. Use AddCustomFunctionLibrary instead.
 * @memberof Api
 * @param {Function} fCustom - A new function for calculating. Can be synchronous or asynchronous.
 */
@@ -9131,7 +9131,7 @@ ApiWorksheet.prototype.SetHyperlink = function(sRange, sAddress, subAddress, sSc
 * <note>Please note that the horizontal and vertical offsets are calculated within the limits of the specified column and
 * row cells only. If this value exceeds the cell width or height, another vertical/horizontal position will be set.</note>
 * :::note
-* Values of <em>nStyleIndex</em> outside <b>1 - 48</b> are interpreted as a chart style id from the <em>cs:chartStyle</em> element (e.g. 201, 215, 284) and are available only for [ONLYOFFICE Docs Enterprise](https://www.onlyoffice.com/docs-enterprise-prices.aspx?from=api) and [ONLYOFFICE Docs Developer](https://www.onlyoffice.com/developer-edition-prices.aspx?from=api).
+* Values of <em>nStyleIndex</em> outside <b>1 - 48</b> are interpreted as a chart style id from the <em>cs:chartStyle</em> element (e.g. 201, 215, 284) and are available only for [OA Docs Docs Enterprise](https://github.com/rxbyes/DocumentServer.aspx?from=api) and [OA Docs Docs Developer](https://github.com/rxbyes/DocumentServer.aspx?from=api).
 * :::
 * @memberof ApiWorksheet
 * @param {string} sDataRange - The selected cell range which will be used to get the data for the chart, formed specifically and including the sheet name.

@@ -92,7 +92,7 @@
     {"src": "UsageInstructions/SavePrintDownload.htm", "name": "Čuvanje, preuzimanje i štampanje dokumenta" },
     {"src": "HelpfulHints/AdvancedSettings.htm", "name": "Napredna podešavanja Document Editor-a"},
     {"src": "HelpfulHints/Navigation.htm", "name": "Podešavanja prikaza i navigacije" },
-    {"src": "HelpfulHints/Viewer.htm", "name": "ONLYOFFICE Pregledač dokumenata"},
+    {"src": "HelpfulHints/Viewer.htm", "name": "OA Docs Pregledač dokumenata"},
     {"src": "HelpfulHints/Search.htm", "name": "Pretraga i zamena"},
     {"src": "HelpfulHints/SpellChecking.htm", "name": "Provera pravopisa"},
     {"src": "UsageInstructions/MathAutoCorrect.htm", "name": "AutoCorrect funkcije" },
