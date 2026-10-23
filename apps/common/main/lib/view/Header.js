@@ -422,8 +422,9 @@ define([
 
             if ( me.logo )
                 me.logo.children(0).on('click', function (e) {
+                    // OA Docs 修改（2026-10-23）：未配置 branding.logo.url 时不再回退官方占位外链 {{PUBLISHER_URL}}，点击 logo 无动作；配置了 branding.logo.url 的行为不变
                     var _url = !!me.branding && !!me.branding.logo && (me.branding.logo.url!==undefined) ?
-                        me.branding.logo.url : '{{PUBLISHER_URL}}';
+                        me.branding.logo.url : undefined;
                     if (_url) {
                         var newDocumentPage = window.open(_url);
                         newDocumentPage && newDocumentPage.focus();
