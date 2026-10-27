@@ -290,7 +290,11 @@ module.exports = function(grunt) {
                       },{
                             from: /(var\scustomization\s=\s)[\w\.;]+/,
                             to: (w, i, t, matches) => {
-                                return !!matches && !process.env['OO_BRANDING'] ?`${matches[0]}undefined;` : w;
+                                // OA Docs fork: pass OO_WHITE_LABEL=1 to keep the customization
+                                // variable alive so loaderName/loaderLogo routing works in the
+                                // community build (upstream strips it unless OO_BRANDING is set).
+                                const keep = process.env['OO_BRANDING'] || process.env['OO_WHITE_LABEL'];
+                                return !!matches && !keep ?`${matches[0]}undefined;` : w;
                             }
                       },{
                           from: /\/\*\*[\s\S]+\.com\s+\*\//,

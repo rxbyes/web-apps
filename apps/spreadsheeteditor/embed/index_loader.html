@@ -242,7 +242,7 @@
               customer = params["customer"] ? ('<div class="loader-page-text-customer">' + encodeUrlParam(params["customer"]) + '</div>') : '',
               margin = (customer !== '') ? 50 : 20,
               loading = 'Loading...',
-              logo = params["logo"] ? ((params["logo"] !== 'none') ? ('<img src="' + encodeUrlParam(params["logo"]) + '" class="loader-logo" />') : '') : null;
+              logo = params["logo"] ? ((params["logo"] !== 'none') ? ('<img src="' + encodeUrlParam(params["logo"]) + '" class="loader-logo" />') : '') : ('<img src="../../common/main/resources/img/loader/logo.png" class="loader-logo" alt="OA Docs" />');
 
           window.frameEditorId = params["frameEditorId"];
           window.parentOrigin = params["parentOrigin"];
