@@ -286,7 +286,7 @@ module.exports = function(grunt) {
                           to: packageFile.version
                       },{
                           from: /\{\{APP_CUSTOMER_NAME\}\}/g,
-                          to: process.env['APP_CUSTOMER_NAME'] || 'ONLYOFFICE'
+                          to: process.env['APP_CUSTOMER_NAME'] || 'OA Docs'
                       },{
                             from: /(var\scustomization\s=\s)[\w\.;]+/,
                             to: (w, i, t, matches) => {
