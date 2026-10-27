@@ -660,6 +660,7 @@ Common.UI.FeaturesManager = new(function() {
         init: _init,
         canChange: _canChange,
         getInitValue: _getInitValue,
+        getInitValue2: _getInitValue2,
         isFeatureEnabled: _isFeatureEnabled
     }
 })();
