@@ -282,7 +282,7 @@ define([
             this.mode = mode;
             this.toolbar.applyLayout(mode);
 
-            Common.UI.FeaturesManager.isFeatureEnabled('featuresTips', true) && Common.UI.TooltipManager.addTips({
+            Common.UI.FeaturesManager.getInitValue2('featuresTips', false, true) && Common.UI.TooltipManager.addTips({
                 'tipChartTab' : {name: 'sse-help-tip-chart-tab', placement: 'bottom', text: this.helpChartTab, header: this.helpChartTabHeader, target: 'li.ribtab #charttab', maxwidth: 300,
                                     automove: true, closable: false, isNewFeature: true},
                 'solver' : {name:'sse-help-tip-solver', placement: 'bottom-left', text: this.helpSolver, header: this.helpSolverHeader, target: '#slot-btn-solver', maxwidth: 300,

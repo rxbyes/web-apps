@@ -275,7 +275,7 @@ define([
             this.mode = mode;
             this.toolbar.applyLayout(mode);
             // var url = 'https://github.com/rxbyes/DocumentServer';
-            Common.UI.FeaturesManager.isFeatureEnabled('featuresTips', true) && Common.UI.TooltipManager.addTips({
+            Common.UI.FeaturesManager.getInitValue2('featuresTips', false, true) && Common.UI.TooltipManager.addTips({
                 // 'commentFilter' : {name: 'help-tip-comment-filter', placement: 'bottom-right', text: this.helpCommentFilter, header: this.helpCommentFilterHeader, target: '#comments-btn-sort', maxwidth: 300,
                 //                   closable: false, isNewFeature: true, link: {text: _main.textLearnMore, url: url}},
                 'tipChartTab' : {name: 'de-help-tip-chart-tab', placement: 'bottom', text: this.helpChartTab, header: this.helpChartTabHeader, target: 'li.ribtab #charttab', maxwidth: 300,

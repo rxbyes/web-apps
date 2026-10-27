@@ -304,7 +304,7 @@ define([
             this.toolbar.applyLayout(mode);
 //            var url = 'https://github.com/rxbyes/DocumentServer';
 
-            Common.UI.FeaturesManager.isFeatureEnabled('featuresTips', true) && Common.UI.TooltipManager.addTips({
+            Common.UI.FeaturesManager.getInitValue2('featuresTips', false, true) && Common.UI.TooltipManager.addTips({
 //                'chartElements' : {name: 'help-tip-chart-elements', placement: 'bottom', text: this.helpChartElements, header: this.helpChartElementsHeader, target: '#id-document-holder-btn-chart-element', maxwidth: 300,
 //                    automove: true, noHighlight: true, noArrow: true, closable: false, isNewFeature: true, link: {text: _main.textLearnMore, url: url}},
                 'tipChartTab' : {name: 'pe-help-tip-chart-tab', placement: 'bottom', text: this.helpChartTab, header: this.helpChartTabHeader, target: 'li.ribtab #charttab', maxwidth: 300,
